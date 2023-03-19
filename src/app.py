@@ -23,6 +23,9 @@ df_columns = ['contestant', 'wins', 'highs', 'safes', 'lows', 'btms', 'participa
 data_columns = ['Drag Queen', 'Wins', 'Highs', 'Safes', 'Lows', 'Bottoms', 'Total Episodes']
 
 app = Dash(__name__)
+
+server = app.server
+
 load_figure_template(["darkly"])
 app.config.external_stylesheets = [dbc.themes.DARKLY]
 
