@@ -4,7 +4,7 @@ from dash_bootstrap_templates import load_figure_template
 import plotly.express as px
 import pandas as pd
 
-drag = pd.read_csv("data/drag.csv")
+drag = pd.read_csv("~/data/drag.csv")
 
 wins = drag[drag["outcome"] != "NaN"].groupby(["contestant"]).apply(lambda x: pd.Series(dict(
     participant=x.participant.sum(),
