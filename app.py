@@ -55,8 +55,7 @@ sidebar = html.Div(
                 value ="Win Percent",
                 inline=False
             )], style={'color': 'hotpink',
-                       'font-size': '18px',
-                       'font-family': 'Garamond'}),
+                       'font-size': '18px'}),
         html.Br(),
         html.Br(),
         html.Label([
@@ -68,7 +67,8 @@ sidebar = html.Div(
                 id="contestant",
                 options =drag.sort_values(by="contestant")["contestant"].unique(),
                 clearable=True,
-                multi = True
+                multi = True,
+                placeholder="Select a drag queen",
             )],
                    style={
                 'width': '100%'
