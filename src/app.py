@@ -118,12 +118,20 @@ content = dbc.Container([
         ]),
     dbc.Row([
         dbc.Col([
+            html.H4("Outcome Percentage",
+                    style={'color': 'hotpink',
+                       'font-size': '25px',
+                       'font-family': 'Impact'}),
             dcc.Graph(id="graph"),
             html.Br(),
             html.Br(),
             html.Br(),
              dbc.Row([
             dbc.Col([
+                html.H4("Outcome Counts",
+                        style={'color': 'hotpink',
+                       'font-size': '25px',
+                       'font-family': 'Impact'}),
                 dash_table.DataTable(id='table', 
                                     page_size=5,
                                     style_cell={'padding': '5px'},
