@@ -1,6 +1,6 @@
 # drag_race_viz
 
-This dashboard is hosted through `Render` here.
+This dashboard is hosted through `Render` [here](https://drag-race-viz.onrender.com).
 
 ## Contributor
 
@@ -23,11 +23,11 @@ To use the dashboard, simply visit the deployed link and explore the data. Users
 
 To interact with the dashboard simply select one of the outcome categories other than the default `Win Percentage`. Additionally users can filter the queens in the visualizations by utalizing the dropdown for queen selection.
 
-Deployed link: 
+Deployed link: [drag_race_viz app](Dashboard to compare the rankings and information of drag queens from the RuPauls Drag Race television show)
 
 ## References
 
-The main source of the data is from the [dragracer](https://cran.r-project.org/web/packages/dragracer/readme/README.html). This is an R package of data sets that is created from scraping the drag race fandom wiki [wiki](https://rupaulsdragrace.fandom.com/). 
+The main source of the data is from the [dragracer](https://drag-race-viz.onrender.com). 
 
 In addition, though not used in this application, the latitude and longitude contained in the cleaned [data set](https://github.com/shaunhutch/drag_race_viz/blob/main/data/drag.csv) in this repo are sourced from [simplemaps.com](https://simplemaps.com/data/us-cities) using their Basic Database.
 
