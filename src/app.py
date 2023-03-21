@@ -30,7 +30,7 @@ load_figure_template(["darkly"])
 app.config.external_stylesheets = [dbc.themes.DARKLY]
 
 SIDEBAR_STYLE = {
-    "position": "fixed",
+    # "position": "fixed",
     "top": 0,
     "left": 0,
     "bottom": 0,
