@@ -30,7 +30,7 @@ load_figure_template(["darkly"])
 app.config.external_stylesheets = [dbc.themes.DARKLY]
 
 SIDEBAR_STYLE = {
-    # "position": "fixed",
+    "position": "fixed",
     "top": 0,
     "left": 0,
     "bottom": 0,
@@ -38,7 +38,11 @@ SIDEBAR_STYLE = {
     "padding": "2rem 1rem",
     'backgroundColor': 'rgb(50, 50, 50)',
 }
-
+CONTENT_STYLE = {
+    "margin-left": "18rem",
+    "margin-right": "2rem",
+    "padding": "2rem 1rem",
+}
 
 sidebar = html.Div(
     [
@@ -103,14 +107,7 @@ content = dbc.Container([
                               'margin-bottom': 20,
                               }
                 )])
-                    # 'backgroundColor': 'white',
-                    # 'padding': 20,
-                    # 'color': 'hotpink',
-                    # 'margin-top': 20,
-                    # 'margin-bottom': 20,
-                    # 'font-size': '48px',
-                    # 'border-radius': 3,
-                    # })]), 
+                
             
             ])
             
@@ -145,7 +142,8 @@ content = dbc.Container([
                                     
     ])])
        ])
-])])
+])],
+                        style = CONTENT_STYLE)
 
 app.layout = html.Div([sidebar, content])
 
